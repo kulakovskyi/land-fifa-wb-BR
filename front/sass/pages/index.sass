@@ -305,6 +305,10 @@ body
       width: 122px
       height: 122px
       background: url("../img/coin1.png") no-repeat 50% 0/contain
+      @media screen and (max-width: 600px) and (orientation: portrait)
+        background: url("../img/coin1-mob.png") no-repeat 50% 0/contain
+      @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+        background: url("../img/coin1-mob.png") no-repeat 50% 0/contain
     &-coin2
       position: absolute
       animation: 13s ease coin2 infinite
@@ -313,6 +317,10 @@ body
       width: 156px
       height: 178px
       background: url("../img/coin2.png") no-repeat 50% 0/contain
+      @media screen and (max-width: 600px) and (orientation: portrait)
+        background: url("../img/coin2-mob.png") no-repeat 50% 0/contain
+      @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+        background: url("../img/coin2-mob.png") no-repeat 50% 0/contain
     &-coin3
       position: absolute
       animation: 9s ease coin3 infinite
@@ -321,6 +329,10 @@ body
       width: 113px
       height: 116px
       background: url("../img/coin3.png") no-repeat 50% 0/contain
+      @media screen and (max-width: 600px) and (orientation: portrait)
+        background: url("../img/coin3-mob.png") no-repeat 50% 0/contain
+      @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+        background: url("../img/coin3-mob.png") no-repeat 50% 0/contain
     &-coin4
       position: absolute
       animation: 12s ease coin4 infinite
@@ -329,6 +341,10 @@ body
       width: 101px
       height: 101px
       background: url("../img/coin4.png") no-repeat 50% 0/contain
+      @media screen and (max-width: 600px) and (orientation: portrait)
+        background: url("../img/coin4-mob.png") no-repeat 50% 0/contain
+      @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+        background: url("../img/coin4-mob.png") no-repeat 50% 0/contain
     &-coin5
       position: absolute
       animation: 8s ease coin4 infinite
@@ -337,6 +353,10 @@ body
       width: 165px
       height: 135px
       background: url("../img/coin5.png") no-repeat 50% 0/contain
+      @media screen and (max-width: 600px) and (orientation: portrait)
+        background: url("../img/coin5-mob.png") no-repeat 50% 0/contain
+      @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+        background: url("../img/coin5-mob.png") no-repeat 50% 0/contain
     &-coin6
       position: absolute
       animation: 8s ease coin2 infinite
@@ -345,6 +365,10 @@ body
       width: 165px
       height: 135px
       background: url("../img/coin6.png") no-repeat 50% 0/contain
+      @media screen and (max-width: 600px) and (orientation: portrait)
+        background: url("../img/coin6-mob.png") no-repeat 50% 0/contain
+      @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+        background: url("../img/coin6-mob.png") no-repeat 50% 0/contain
 
 
 
@@ -428,6 +452,17 @@ body
   100%
     filter: drop-shadow(0 0 0.75rem $magenta)
     transform: translateY(-60%) rotate(0)
+
+@keyframes gameAnim-mob
+  0%
+    filter: drop-shadow(0 0 0.75rem $magenta)
+    transform: rotate(0)
+  50%
+    filter: drop-shadow(0 0 1.75rem $magenta)
+    transform: rotate(4deg)
+  100%
+    filter: drop-shadow(0 0 0.75rem $magenta)
+    transform: rotate(0)
 
 @keyframes glitch-anim-1
   0%
