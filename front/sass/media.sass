@@ -187,11 +187,25 @@
       &-image
         height: 457px
 
+@media screen and (max-width: 960px) and (orientation: landscape)
+  .land
+    padding: 0 0 25px 25px
+    &__logo
+      width: 251px
+    &__info
+      transform: scale(0.55)
+
 /*************************************TABLET************************************/
 
 @media screen and (max-width: 1035px) and (orientation: portrait)
   .land
     padding: 0 25px 60px
+    &__logo
+      width: 336px
+      height: 149px
+      left: auto
+      right: 0
+      background: url('../img/logo-tab.svg') no-repeat 50% 0/contain
     &__info
       transform: scale(1)
       width: 100%
@@ -261,9 +275,9 @@
           grid-row: 2/3
           margin: 0
     &__game
-      top: 21%
+      top: 20%
       right: auto
-      height: 40vh
+      height: 510px
       width: 100%
       left: 0
       &::before
@@ -317,6 +331,373 @@
         right: 35%
         width: 125px
         height: 95px
+
+
+@media screen and (max-width: 920px) and (orientation: portrait)
+  .land
+    &__logo
+      width: 275px
+      height: 120px
+    &__game
+      height: 400px
+    &__info
+      &-title
+        font-size: 60px
+        line-height: 70px
+        margin: 0 0 35px 0
+      &-copy
+        width: 75px
+        height: 57px
+      &-item
+        &:nth-child(2)
+          img
+            max-width: 30px
+        &-top
+          font-size: 48px
+          line-height: 48px
+        &-bottom
+          font-size: 14px
+          line-height: 18px
+      &-link
+        font-size: 20px
+        line-height: 26px
+        padding: 22px 75px 20px
+
+@media screen and (max-width: 812px) and (orientation: portrait)
+  .land
+    &__game
+      height: 410px
+
+@media screen and (max-width: 770px) and (orientation: portrait)
+  .land
+    &__game
+      height: 390px
+
+@media screen and (max-width: 770px) and (orientation: portrait) and (max-height: 910px)
+  .land
+    padding: 0 25px 25px
+
+@media screen and (max-width: 758px) and (orientation: portrait)
+  .land
+    &__game
+      height: 370px
+    &__info
+      &-link
+        padding: 22px 61px 20px
+
+@media screen and (max-width: 748px) and (orientation: portrait)
+  .land
+    &__game
+      height: 360px
+
+@media screen and (max-width: 730px) and (orientation: portrait)
+  .land
+    &__game
+      height: 350px
+    &__info
+      &-link
+        padding: 22px 40px 20px
+
+/*************************************MOBILE************************************/
+
+@media screen and (max-width: 600px) and (orientation: portrait)
+  .land
+    padding: 450px 15px 30px
+    &__game
+      height: 240px
+      top: 140px
+      &-image
+        height: 34%
+        width: 78%
+        top: 0
+        left: 13%
+      &-coin1
+        top: 3%
+        left: 14%
+        width: 42px
+        height: 72px
+      &-coin2
+        top: 4%
+        right: 12%
+        width: 46px
+        height: 68px
+      &-coin3
+        top: 7%
+        left: 34%
+        width: 43px
+        height: 86px
+      &-coin4
+        top: auto
+        bottom: 26%
+        right: 12%
+        width: 51px
+        height: 51px
+      &-coin5
+        bottom: 26%
+        left: 20%
+        width: 45px
+        height: 55px
+      &-coin6
+        bottom: 16%
+        right: 31%
+        width: 55px
+        height: 65px
+    &__logo
+      top: 0
+      left: 0
+      right: auto
+      width: 177px
+      height: 77px
+      background: url('../img/logo.svg') no-repeat 50% 0/contain
+    &__info
+      grid-template-columns: 100%
+      grid-template-rows: auto auto auto
+      &-title
+        font-size: 40px
+        line-height: 45px
+        margin: 0 0 7px 0
+        grid-row: 1/2
+        grid-column: 1/2
+      &-link
+        white-space: nowrap
+        font-size: 16px
+        line-height: 21px
+        padding: 20px 15px 18px
+      &-list
+        margin: 0 0 26px 0
+      &-item
+        &-top
+          font-size: 48px
+          line-height: 48px
+        &-bottom
+          font-size: 14px
+          line-height: 18px
+      &-wrapper
+        flex-direction: column
+        align-items: stretch
+        grid-row: 2/3
+        grid-column: 1/2
+        margin: 0 0 58px 0
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          z-index: 4
+          bottom: -35px
+          left: 50%
+          border: solid $magenta
+          border-width: 0 4px 4px 0
+          display: inline-block
+          padding: 8px
+          transform: translateX(-50%) rotate(45deg)
+      &-copy
+        display: flex
+        justify-content: center
+        gap: 0
+        width: auto
+        height: auto
+        position: static
+        grid-row: 3/4
+        grid-column: 1/2
+        &-img
+          &:not(:last-child)
+            margin: 0 18px 0 0
+        &-visa
+          width: 34px
+          height: 22px
+        &-coins
+          width: 75px
+          height: 20px
+        &-master
+          width: 37px
+          height: 22px
+
+@media screen and (max-width: 600px) and (orientation: portrait) and (max-height: 920px)
+  .land
+    padding: 568px 15px 30px
+
+@media screen and (max-width: 600px) and (orientation: portrait) and (max-height: 835px)
+  .land
+    padding: 521px 15px 30px
+
+@media screen and (max-width: 600px) and (orientation: portrait) and (max-height: 745px)
+  .land
+    padding: 450px 15px 30px
+    &__game
+      height: 230px
+
+@media screen and (max-width: 400px) and (orientation: portrait) and (max-height: 855px)
+  .land
+    padding: 490px 15px 30px
+    &__game
+      height: 210px
+
+@media screen and (max-width: 400px) and (orientation: portrait) and (max-height: 760px)
+  .land
+    padding: 450px 15px 30px
+    &__game
+      height: 220px
+
+@media screen and (max-width: 400px) and (orientation: portrait) and (max-height: 725px)
+  .land
+    padding: 421px 15px 30px
+    &__game
+      top: 120px
+
+@media screen and (max-width: 400px) and (orientation: portrait) and (max-height: 675px)
+  .land
+    padding: 398px 15px 30px
+    &__game
+      top: 125px
+      height: 220px
+
+@media screen and (max-width: 380px) and (orientation: portrait) and (max-height: 600px)
+  .land
+    padding: 340px 15px 30px
+    background-position: 0 -18px
+    &__game
+      top: 106px
+    &__info
+      &-list
+        margin: 0 0 15px 0
+      &-title
+        font-size: 33px
+        line-height: 37px
+      &-item
+        &:nth-child(2)
+          img
+            max-width: 20px
+            top: 7px
+        &-top
+          font-size: 32px
+          line-height: 32px
+        &-bottom
+          font-size: 10px
+          line-height: 14px
+
+@media screen and (max-width: 365px) and (orientation: portrait) and (max-height: 750px)
+  .land
+    padding: 396px 15px 30px
+    &__game
+      height: 210px
+      top: 110px
+
+@media screen and (max-width: 365px) and (orientation: portrait) and (max-height: 650px)
+  .land
+    padding: 378px 15px 30px
+    &__game
+      height: 200px
+
+@media screen and (max-width: 340px) and (orientation: portrait)
+  .land
+    &__info
+      &-title
+        font-size: 34px
+        line-height: 40px
+    &__game
+      height: 180px
+
+@media screen and (max-width: 340px) and (orientation: portrait) and (max-height: 670px)
+  .land
+    padding: 362px 15px 30px
+
+@media screen and (max-width: 340px) and (orientation: portrait) and (max-height: 600px)
+  .land
+    padding: 312px 15px 30px
+    &__game
+      top: 86px
+
+/*************************************LANDSCAPE************************************/
+
+@media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+  .land
+    &__logo
+      width: 166px
+    &__info
+      transform: scale(0.4)
+      &-title
+        &-bottom
+          white-space: nowrap
+    &__game
+      &-image
+        top: 79%
+      &-coin2
+        width: 66px
+        height: 58px
+      &-coin6
+        width: 65px
+        height: 45px
+      &-coin5
+        width: 75px
+        height: 65px
+
+@media screen and (max-width: 760px) and (orientation: landscape) and (max-height: 400px)
+  .land
+    &__game
+      width: 40.5vw
+      right: 6%
+
+@media screen and (max-width: 750px) and (orientation: landscape) and (max-height: 450px)
+  .land
+    &__game
+      width: 44.5vw
+      right: 2%
+
+@media screen and (max-width: 750px) and (orientation: landscape) and (max-height: 375px)
+  .land
+    &__game
+      width: 41.5vw
+      right: 7%
+      &-image
+        top: 89%
+
+@media screen and (max-width: 730px) and (orientation: landscape) and (max-height: 400px)
+  .land
+    &__game
+      width: 42.5vw
+      right: 5%
+
+@media screen and (max-width: 720px) and (orientation: landscape) and (max-height: 450px)
+  .land
+    &__game
+      width: 44.5vw
+      right: 1%
+
+@media screen and (max-width: 660px) and (orientation: landscape) and (max-height: 340px)
+  .land
+    &__game
+      width: 42.5vw
+      right: 7%
+    &__info
+      transform: scale(.3)
+
+@media screen and (max-width: 650px) and (orientation: landscape) and (max-height: 370px)
+  .land
+    &__game
+      &-image
+        top: 93%
+    &__info
+      transform: scale(0.35)
+
+@media screen and (max-width: 570px) and (orientation: landscape) and (max-height: 385px)
+  .land
+    background-position: -150px 0
+    &__info
+      transform: scale(0.3)
+    &__game
+      width: 50.5vw
+      &-image
+        top: 93%
+
+@media screen and (max-width: 570px) and (orientation: landscape) and (max-height: 330px)
+  .land
+    background-position: -40px 0
+    &__game
+      right: -1%
+      &-image
+        top: 97%
+
+
 
 
 
